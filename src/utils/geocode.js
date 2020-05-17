@@ -1,6 +1,8 @@
 const axios = require('axios');
+const dotenv = require('dotenv');
+dotenv.config();
 const params = {
-    access_token: 'pk.eyJ1IjoiZGhhcm1pa3A1NzIiLCJhIjoiY2thOWdmejdvMDJ0ZzJxbzdpZnVrdXBhbyJ9.mrazd2i-4zSCBOK1ZmSPLQ',
+    access_token: process.env.MAPBOX,
     limit: 1
 }
 const geocode = (address) => {
