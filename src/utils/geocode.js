@@ -1,6 +1,4 @@
 const axios = require('axios');
-const dotenv = require('dotenv');
-dotenv.config();
 const params = {
     access_token: process.env.MAPBOX,
     limit: 1
