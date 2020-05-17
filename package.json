@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js -e js,hbs",
-    "deploy":"git push heroku master && heroku open",
+    "deploy": "git push heroku master && heroku open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,7 +15,9 @@
   "dependencies": {
     "axios": "^0.19.2",
     "express": "^4.17.1",
-    "hbs": "^4.1.1",
+    "hbs": "^4.1.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.4"
   }
 }
