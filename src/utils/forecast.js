@@ -9,7 +9,11 @@ const forecast = (latitude, longitude) => {
                 if (data.error) {
                     reject('Unable to find location');
                 } else {
-                    resolve(`${data.current.weather_descriptions[0]} It is currently ${data.current.temperature} degress out. There is a ${data.current.precip}% chance of rain.`)
+                    resolve(`${data.current.weather_descriptions[0]}.
+                    <br>It is currently ${data.current.temperature} degress out.
+                    <br>There is a ${data.current.precip}% chance of rain.
+                    <br>It feels like ${data.current.feelslike} degrees.
+                    <br>Data observed on ${data.current.observation_time}.`)
                 }
             }).catch((err) => {
                 console.error(err);
